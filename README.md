@@ -12,6 +12,7 @@
 ---
 
 ## 二、项目结构
+```
 opencv_project/
 ├── CMakeLists.txt
 ├── src/
@@ -22,7 +23,7 @@ opencv_project/
 │   └── test_image_2.png
 ├── picture_results/
 └── build/
-
+```
 - `src/`：存放主程序 `main.cpp`  
 - `resources/`：存放测试图片及处理结果
 - `picture_results`：存放结果图片    
