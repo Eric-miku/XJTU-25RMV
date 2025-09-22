@@ -54,12 +54,14 @@ opencv_project/
    - 轮廓和 bounding box（Contours_&_Boxes）  
    ![Red Mask](picture_results/Red_Mask.png)  
    ![Contours & Boxes](picture_results/Contours_&_Boxes.png)  
-
+   - 所有轮廓总面积: 15172
 4. **图像形态学处理**
+   - 灰度化 （Gray）
    - 二值化（Binary）  
    - 膨胀（Dilated）  
    - 腐蚀（Eroded）  
-   - 漫水填充（FloodFill）  
+   - 漫水填充（FloodFill） 
+   ![Gray](picture_results/Gray.png)  
    ![Binary](picture_results/Binary.png)  
    ![Dilated](picture_results/Dilated.png)  
    ![Eroded](picture_results/Eroded.png)  
@@ -68,6 +70,8 @@ opencv_project/
 5. **绘制**
    - 绘制圆、矩形及文字（Drawing）  
    ![Drawing](picture_results/Drawing.png)  
+    - 轮廓和 bounding box（Contours_&_Boxes）  
+   ![Contours & Boxes](picture_results/Contours_&_Boxes.png)  
 
 6. **图像旋转和裁剪**
    - 旋转 35 度（Rotated）  

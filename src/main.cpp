@@ -98,12 +98,19 @@ void redRegion(const Mat& img) {
     findContours(redMask, contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
 
     Mat contourImg = img.clone();
+    double totalArea = 0.0; // 用于累加总面积
+
     for (size_t i = 0; i < contours.size(); i++) {
         Rect box = boundingRect(contours[i]);
         drawContours(contourImg, contours, (int)i, Scalar(0, 255, 0), 2);
         rectangle(contourImg, box, Scalar(255, 0, 0), 2);
-        cout << "轮廓 " << i << " 面积: " << contourArea(contours[i]) << endl;
+
+        double area = contourArea(contours[i]);
+        totalArea += area; // 累加
+        cout << "轮廓 " << i << " 面积: " << area << endl;
     }
+
+    cout << "所有轮廓总面积: " << totalArea << endl; // 输出总面积
 
     showAndSave("Red_Mask", redMask);
     showAndSave("Contours_&_Boxes", contourImg);
