@@ -91,7 +91,7 @@ opencv_project/
 
 3. **平行矩形对检测**
    - 根据旋转矩形角度和中心距离判断是否平行  
-   - 绘制平行矩形对（绿色）  
+   - 绘制平行矩形对（蓝色&绿色）  
    ![Detected Armor with Parallel Pairs](picture_results/Detected_Armor_with_Parallel_Pairs.png)  
 
 ---
