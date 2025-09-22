@@ -15,12 +15,12 @@
 opencv_project/
 ├── CMakeLists.txt
 ├── src/
-│ └── main.cpp
+│   └── main.cpp
 ├── README.md
 ├── resources/
-│ ├── test_image.png
-│ └── test_image_2.png
-├── picture_results/ 
+│   ├── test_image.png
+│   └── test_image_2.png
+├── picture_results/
 └── build/
 
 - `src/`：存放主程序 `main.cpp`  
@@ -45,14 +45,14 @@ opencv_project/
 2. **滤波**
    - 均值滤波（Mean Blur）  
    - 高斯滤波（Gaussian Blur）  
-   ![Mean Blur](picture_results/Mean Blur.png)  
-   ![Gaussian Blur](picture_results/Gaussian Blur.png)  
+   ![Mean Blur](picture_results/Mean_Blur.png)  
+   ![Gaussian Blur](picture_results/Gaussian_Blur.png)  
 
 3. **红色区域提取 & 轮廓分析**
    - 红色掩码（Red Mask）  
-   - 轮廓和 bounding box（Contours & Boxes）  
-   ![Red Mask](picture_results/Red Mask.png)  
-   ![Contours & Boxes](picture_results/Contours & Boxes.png)  
+   - 轮廓和 bounding box（Contours_&_Boxes）  
+   ![Red Mask](picture_results/Red_Mask.png)  
+   ![Contours & Boxes](picture_results/Contours_&_Boxes.png)  
 
 4. **图像形态学处理**
    - 二值化（Binary）  
@@ -82,12 +82,12 @@ opencv_project/
 2. **装甲板检测**
    - 检测装甲板区域生成旋转矩形  
    - 绘制矩形框（Detected Armor）  
-   ![Detected Armor](picture_results/Detected Armor.png)  
+   ![Detected Armor](picture_results/Detected_Armor.png)  
 
 3. **平行矩形对检测**
    - 根据旋转矩形角度和中心距离判断是否平行  
    - 绘制平行矩形对（绿色）  
-   ![Detected Armor with Parallel Pairs](picture_results/Detected Armor with Parallel Pairs.png)  
+   ![Detected Armor with Parallel Pairs](picture_results/Detected_Armor_with_Parallel_Pairs.png)  
 
 ---
 ## 四、编译与运行

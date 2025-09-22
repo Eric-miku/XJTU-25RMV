@@ -80,8 +80,8 @@ void filtering(const Mat& img) {
     Mat blurImg, gaussianImg;
     blur(img, blurImg, Size(10, 10));
     GaussianBlur(img, gaussianImg, Size(9, 9), 0);
-    showAndSave("Mean Blur", blurImg);
-    showAndSave("Gaussian Blur", gaussianImg);
+    showAndSave("Mean_Blur", blurImg);
+    showAndSave("Gaussian_Blur", gaussianImg);
 }
 
 // 4. 红色区域提取 & 轮廓分析
@@ -105,8 +105,8 @@ void redRegion(const Mat& img) {
         cout << "轮廓 " << i << " 面积: " << contourArea(contours[i]) << endl;
     }
 
-    showAndSave("Red Mask", redMask);
-    showAndSave("Contours & Boxes", contourImg);
+    showAndSave("Red_Mask", redMask);
+    showAndSave("Contours_&_Boxes", contourImg);
 }
 
 // 5. 图像形态学处理
@@ -273,7 +273,7 @@ int main() {
 
     Mat result = img2.clone();
     drawArmor(result, armors);
-    showAndSave("Detected Armor", result);
+    showAndSave("Detected_Armor", result);
 
     vector<pair<int,int>> parallelPairs = findParallelPairs(armors, 10.0f);
 
@@ -282,7 +282,7 @@ int main() {
         cout << "矩形索引对: " << p.first << " 和 " << p.second << endl;
 
     drawParallelPairs(result, armors, parallelPairs);
-    showAndSave("Detected Armor with Parallel Pairs", result);
+    showAndSave("Detected_Armor_with_Parallel_Pairs", result);
     //展示时长
     waitKey(1000);
     return 0;
